@@ -22,14 +22,8 @@ public class Scan extends AppCompatActivity {
         number.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Fragment fragment = null;
-                fragment = new MobileNumber();
-                if (fragment != null) {
-                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                    ft.replace(R.id.activity_scan, fragment);
-                    ft.commit();
-                }
-
+                Intent myIntent = new Intent(Scan.this, MainActivity.class);
+                startActivity(myIntent);
             }
         });
         back.setOnClickListener(new View.OnClickListener(){

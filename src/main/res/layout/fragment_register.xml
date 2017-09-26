@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rohithreddy.hkwikmint.Register">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingTop="1dp"
+            android:paddingBottom="10dp"
+            android:saveEnabled="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingTop="1dp"
+            android:paddingBottom="10dp"
+            android:saveEnabled="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/personal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Personal Details"
+                android:textAllCaps="true"
+                android:textColor="#40d6ff"
+                android:textSize="15sp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <EditText
+                android:id="@+id/ro1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#020202"
+                android:textColor="#020202"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/ro3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#020202"
+                android:layout_marginTop="8dp"
+                android:textColor="#020202"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ro4a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableTint="#FF4081"
+                    android:textColor="#d67601"
+                    android:hint="   Month    "
+                    android:textSize="20sp"
+                    android:maxLines="1" />
+                <TextView
+                    android:id="@+id/ro4b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableTint="#FF4081"
+                    android:textColor="#d67601"
+                    android:hint="    Day   "
+                    android:textSize="20sp"
+                    android:maxLines="1" />
+                <TextView
+                    android:id="@+id/ro4c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableTint="#FF4081"
+                    android:textColor="#d67601"
+                    android:hint="    Year    "
+                    android:textSize="20sp"
+                    android:maxLines="1" />
+
+                <Button
+                    android:id="@+id/setdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableTint="#FF4081"
+                    android:text="SET DATE" />
+            </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:saveEnabled="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/outlet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Outlet Details"
+                    android:textAllCaps="true"
+                    android:textColor="#40d6ff"
+                    android:textSize="15sp" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/ro2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableTint="#020202"
+                        android:textColor="#020202"
+                        android:hint="Outlet Name"
+                        android:inputType="textAutoComplete"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/ro5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#FF4081"
+                    android:hint="outlet Type"
+                    android:singleLine="true" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/ro6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableTint="#020202"
+                        android:hint="Area(sft)"
+                        android:textColor="#020202"
+                        android:inputType="number"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/ro7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableTint="#FF4081"
+                    android:hint="Main road Vicinity"
+                    android:singleLine="true" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.48">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/rid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <AutoCompleteTextView
+                            android:id="@+id/ro10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="8dp"
+                            android:drawableTint="#020202"
+                            android:maxLines="1"
+                            android:dropDownHeight="wrap_content"
+                            android:dropDownWidth="match_parent"
+                            android:hint=" Route   "
+                            android:textColor="#020202" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/pid"
+                        android:layout_below="@+id/rid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <AutoCompleteTextView
+                            android:id="@+id/ro8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableTint="#020202"
+                            android:hint=" Pincode   "
+                            android:maxLines="1"
+                            android:textColor="#020202"
+                            android:layout_alignParentStart="true" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="22dp"
+                    android:background="#40d6ff"
+                    android:text="SUBMIT"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

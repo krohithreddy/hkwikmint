@@ -91,8 +91,23 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_slideshow) {
+            Fragment fragment = null;
+            fragment = new Attendance();
+            if (fragment != null) {
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, fragment);
+                ft.commit();
+            }
 
         } else if (id == R.id.nav_manage) {
+            Fragment fragment = null;
+            fragment = new Register();
+            if (fragment != null) {
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, fragment);
+                ft.commit();
+            }
+
 
         } else if (id == R.id.nav_share) {
 
