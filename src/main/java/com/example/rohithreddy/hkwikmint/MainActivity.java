@@ -77,12 +77,17 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            Intent myIntent = new Intent(MainActivity.this, Scan.class);
-            startActivity(myIntent);
-            // Handle the camera action
+            Fragment fragment = null;
+            fragment = new ErrorcodeFragment();
+            if (fragment != null) {
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, fragment);
+                ft.commit();
+            }
+
         } else if (id == R.id.nav_gallery) {
             Fragment fragment = null;
-            fragment = new MobileNumber();
+            fragment = new TabsMapping();
             if (fragment != null) {
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                 ft.replace(R.id.content_frame, fragment);
@@ -92,7 +97,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_slideshow) {
             Fragment fragment = null;
-            fragment = new Attendance();
+            fragment = new StockAndSale();
             if (fragment != null) {
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                 ft.replace(R.id.content_frame, fragment);

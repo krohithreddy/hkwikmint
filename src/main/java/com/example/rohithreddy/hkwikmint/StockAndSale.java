@@ -3,7 +3,10 @@ package com.example.rohithreddy.hkwikmint;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,12 +15,14 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Register.OnFragmentInteractionListener} interface
+ * {@link StockAndSale.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Register#newInstance} factory method to
+ * Use the {@link StockAndSale#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Register extends Fragment {
+public class StockAndSale extends Fragment {
+    private SectionsPageAdapter mSectionsPageAdapter;
+    private ViewPager mViewPager;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -29,7 +34,7 @@ public class Register extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Register() {
+    public StockAndSale() {
         // Required empty public constructor
     }
 
@@ -39,11 +44,11 @@ public class Register extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Register.
+     * @return A new instance of fragment StockAndSale.
      */
     // TODO: Rename and change types and number of parameters
-    public static Register newInstance(String param1, String param2) {
-        Register fragment = new Register();
+    public static StockAndSale newInstance(String param1, String param2) {
+        StockAndSale fragment = new StockAndSale();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,10 +69,25 @@ public class Register extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =inflater.inflate(R.layout.fragment_register, container, false);
+        return inflater.inflate(R.layout.fragment_stock_and_sale, container, false);
+    }
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
 
-        return view;
+        super.onViewCreated(view, savedInstanceState);
+        getActivity().setTitle("      Tabs Mapping");
+        mSectionsPageAdapter = new SectionsPageAdapter(getChildFragmentManager());
 
+        // Set up the ViewPager with the sections adapter.
+        mViewPager = (ViewPager) view.findViewById(R.id.container);
+
+        TabLayout tabLayout = (TabLayout) view.findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(mViewPager);
+        SectionsPageAdapter adapter = new SectionsPageAdapter(getChildFragmentManager());
+        adapter.addFrament(new Sale(), "SALE");
+        adapter.addFrament(new Stock(), "STOCK");
+        adapter.addFrament(new SSHistory(), "HISTORY");
+        mViewPager.setAdapter(adapter);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -76,7 +96,6 @@ public class Register extends Fragment {
             mListener.onFragmentInteraction(uri);
         }
     }
-
 
 
     @Override
