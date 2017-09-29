@@ -83,17 +83,12 @@ public class TabsMapping extends Fragment {
         mViewPager = (ViewPager) view.findViewById(R.id.container);
 
         TabLayout tabLayout = (TabLayout) view.findViewById(R.id.tabs);
-        System.out.println("ffffffffffffffffffffffffffffffff");
         tabLayout.setupWithViewPager(mViewPager);
-        System.out.println("uuuuuuuuuuuuuuuuuuuu");
         SectionsPageAdapter adapter = new SectionsPageAdapter(getChildFragmentManager());
-        System.out.println("kkkkkkkkkkkkkkkkkkkkkk");
         adapter.addFrament(new Mapping(), "MAP");
-        System.out.println("cccccccccccc");
-        adapter.addFrament(new MapsHistory(), "HISTORY");
-        System.out.println(adapter+"<-----p-------->");
+        adapter.addFrament(new maphistory(), "HISTORY");
         mViewPager.setAdapter(adapter);
-        System.out.println(adapter);
+
     }
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {

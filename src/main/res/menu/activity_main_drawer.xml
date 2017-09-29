@@ -3,34 +3,31 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Scan" />
+        android:id="@+id/Scan"
+        android:icon="@drawable/ic_fullscreen_black_24dp"
+        android:title="Scan" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Mapping" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:id="@+id/attendance"
+            android:icon="@drawable/ic_accessibility_black_24dp"
             android:title="Attendance" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="register" />
+            android:id="@+id/Mapping"
+            android:icon="@drawable/ic_map_black_24dp"
+            android:title="Mapping" />
+        <item
+            android:id="@+id/Settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />
+        <item
+            android:id="@+id/Sync"
+            android:icon="@drawable/ic_sync_black_24dp"
+            android:title="Sync" />
+        <item
+            android:id="@+id/Promotion"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Promotion" />
+
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
 
 </menu>

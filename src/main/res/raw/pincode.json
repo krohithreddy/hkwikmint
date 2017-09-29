@@ -1,0 +1,1580 @@
+
+{
+"pincodes": [
+  {
+    "id": "12",
+    "name": "Begumpet Policelines",
+    "pincode": "500003"
+  },
+  {
+    "id": "13",
+    "name": "Kingsway",
+    "pincode": "500003"
+  },
+  {
+    "id": "14",
+    "name": "Mg Road",
+    "pincode": "500003"
+  },
+  {
+    "id": "15",
+    "name": "Picket",
+    "pincode": "500003"
+  },
+  {
+    "id": "16",
+    "name": "Secunderabad",
+    "pincode": "500003"
+  },
+  {
+    "id": "17",
+    "name": "A.Gs office",
+    "pincode": "500004"
+  },
+  {
+    "id": "18",
+    "name": "Ngri",
+    "pincode": "500007"
+  },
+  {
+    "id": "19",
+    "name": "Tarnaka",
+    "pincode": "500007"
+  },
+  {
+    "id": "20",
+    "name": "Alwal",
+    "pincode": "500010"
+  },
+  {
+    "id": "21",
+    "name": "Bolarum",
+    "pincode": "500010"
+  },
+  {
+    "id": "22",
+    "name": "Bolarum Bazar",
+    "pincode": "500010"
+  },
+  {
+    "id": "23",
+    "name": "Haiglines",
+    "pincode": "500010"
+  },
+  {
+    "id": "24",
+    "name": "Mahidpur Lines",
+    "pincode": "500010"
+  },
+  {
+    "id": "25",
+    "name": "Bowenpally",
+    "pincode": "500011"
+  },
+  {
+    "id": "26",
+    "name": "Amberpet",
+    "pincode": "500013"
+  },
+  {
+    "id": "27",
+    "name": "Central Police lines",
+    "pincode": "500013"
+  },
+  {
+    "id": "28",
+    "name": "Hyderabad Public school",
+    "pincode": "500013"
+  },
+  {
+    "id": "29",
+    "name": "Seminary",
+    "pincode": "500013"
+  },
+  {
+    "id": "30",
+    "name": "Srinivasapuram",
+    "pincode": "500013"
+  },
+  {
+    "id": "31",
+    "name": "Adraspalli",
+    "pincode": "500014"
+  },
+  {
+    "id": "32",
+    "name": "Bomraspet",
+    "pincode": "500014"
+  },
+  {
+    "id": "33",
+    "name": "Deveryamjal",
+    "pincode": "500014"
+  },
+  {
+    "id": "34",
+    "name": "Doolapalli",
+    "pincode": "500014"
+  },
+  {
+    "id": "35",
+    "name": "Hakimpet",
+    "pincode": "500014"
+  },
+  {
+    "id": "36",
+    "name": "Kompally",
+    "pincode": "500014"
+  },
+  {
+    "id": "37",
+    "name": "Pochampally",
+    "pincode": "500014"
+  },
+  {
+    "id": "38",
+    "name": "Aoc Records",
+    "pincode": "500015"
+  },
+  {
+    "id": "39",
+    "name": "Girmapur",
+    "pincode": "500015"
+  },
+  {
+    "id": "40",
+    "name": "Gowdavalli",
+    "pincode": "500015"
+  },
+  {
+    "id": "41",
+    "name": "Jaggamguda",
+    "pincode": "500015"
+  },
+  {
+    "id": "42",
+    "name": "Kushaiguda",
+    "pincode": "500015"
+  },
+  {
+    "id": "43",
+    "name": "Lalgadi Malakpet",
+    "pincode": "500015"
+  },
+  {
+    "id": "44",
+    "name": "Military College eme",
+    "pincode": "500015"
+  },
+  {
+    "id": "45",
+    "name": "Mudchintanapalli",
+    "pincode": "500015"
+  },
+  {
+    "id": "46",
+    "name": "Nutankal",
+    "pincode": "500015"
+  },
+  {
+    "id": "47",
+    "name": "Pedalaxmapur",
+    "pincode": "500015"
+  },
+  {
+    "id": "48",
+    "name": "Pragatinagar",
+    "pincode": "500015"
+  },
+  {
+    "id": "49",
+    "name": "Ravalkol",
+    "pincode": "500015"
+  },
+  {
+    "id": "50",
+    "name": "Thumkunta",
+    "pincode": "500015"
+  },
+  {
+    "id": "51",
+    "name": "Trimulgherry",
+    "pincode": "500015"
+  },
+  {
+    "id": "52",
+    "name": "Begumpet",
+    "pincode": "500016"
+  },
+  {
+    "id": "53",
+    "name": "Hyd Airport i",
+    "pincode": "500016"
+  },
+  {
+    "id": "54",
+    "name": "Hyd Airport ii",
+    "pincode": "500016"
+  },
+  {
+    "id": "55",
+    "name": "Prakashamnagar",
+    "pincode": "500016"
+  },
+  {
+    "id": "56",
+    "name": "Rajbolaram",
+    "pincode": "500016"
+  },
+  {
+    "id": "57",
+    "name": "Lallaguda",
+    "pincode": "500017"
+  },
+  {
+    "id": "58",
+    "name": "Lallapet",
+    "pincode": "500017"
+  },
+  {
+    "id": "59",
+    "name": "Sainagar",
+    "pincode": "500017"
+  },
+  {
+    "id": "60",
+    "name": "Eme Records",
+    "pincode": "500021"
+  },
+  {
+    "id": "61",
+    "name": "Padmaraonagar",
+    "pincode": "500025"
+  },
+  {
+    "id": "62",
+    "name": "Nehrunagar",
+    "pincode": "500026"
+  },
+  {
+    "id": "63",
+    "name": "Boduppal",
+    "pincode": "500039"
+  },
+  {
+    "id": "64",
+    "name": "Peerzadiguda",
+    "pincode": "500039"
+  },
+  {
+    "id": "65",
+    "name": "Survey Of india",
+    "pincode": "500039"
+  },
+  {
+    "id": "66",
+    "name": "Uppal",
+    "pincode": "500039"
+  },
+  {
+    "id": "67",
+    "name": "Aphb Colony moulali",
+    "pincode": "500040"
+  },
+  {
+    "id": "68",
+    "name": "Ie Moulali",
+    "pincode": "500040"
+  },
+  {
+    "id": "69",
+    "name": "Moulali",
+    "pincode": "500040"
+  },
+  {
+    "id": "70",
+    "name": "Anandbagh",
+    "pincode": "500047"
+  },
+  {
+    "id": "71",
+    "name": "Malkajgiri",
+    "pincode": "500047"
+  },
+  {
+    "id": "72",
+    "name": "Hindustan Cables ltd",
+    "pincode": "500051"
+  },
+  {
+    "id": "73",
+    "name": "Neredmet",
+    "pincode": "500056"
+  },
+  {
+    "id": "74",
+    "name": "Ramakrishna Puram",
+    "pincode": "500056"
+  },
+  {
+    "id": "75",
+    "name": "Sitaphalmandi",
+    "pincode": "500061"
+  },
+  {
+    "id": "76",
+    "name": "Dr As rao nagar",
+    "pincode": "500062"
+  },
+  {
+    "id": "77",
+    "name": "Ecil",
+    "pincode": "500062"
+  },
+  {
+    "id": "78",
+    "name": "Hanumanpet",
+    "pincode": "500062"
+  },
+  {
+    "id": "79",
+    "name": "Khapra",
+    "pincode": "500062"
+  },
+  {
+    "id": "80",
+    "name": "Kyasaram",
+    "pincode": "500062"
+  },
+  {
+    "id": "81",
+    "name": "Napier Lines",
+    "pincode": "500062"
+  },
+  {
+    "id": "82",
+    "name": "Lic Division",
+    "pincode": "500063"
+  },
+  {
+    "id": "83",
+    "name": "Rail Nilayam",
+    "pincode": "500071"
+  },
+  {
+    "id": "84",
+    "name": "I.E.nacharam",
+    "pincode": "500076"
+  },
+  {
+    "id": "85",
+    "name": "Mallapur",
+    "pincode": "500076"
+  },
+  {
+    "id": "86",
+    "name": "Snehapuri Colony",
+    "pincode": "500076"
+  },
+  {
+    "id": "87",
+    "name": "Ponnal",
+    "pincode": "500078"
+  },
+  {
+    "id": "88",
+    "name": "Shamirpet",
+    "pincode": "500078"
+  },
+  {
+    "id": "89",
+    "name": "Sainikpuri",
+    "pincode": "500094"
+  },
+  {
+    "id": "90",
+    "name": "Ankireddipalli",
+    "pincode": "501301"
+  },
+  {
+    "id": "91",
+    "name": "Ankushapur",
+    "pincode": "501301"
+  },
+  {
+    "id": "92",
+    "name": "Annajiguda",
+    "pincode": "501301"
+  },
+  {
+    "id": "93",
+    "name": "Bogaram",
+    "pincode": "501301"
+  },
+  {
+    "id": "94",
+    "name": "Cherial",
+    "pincode": "501301"
+  },
+  {
+    "id": "95",
+    "name": "Cherlapalli",
+    "pincode": "501301"
+  },
+  {
+    "id": "96",
+    "name": "Ghatkesar",
+    "pincode": "501301"
+  },
+  {
+    "id": "97",
+    "name": "Katchvanisingaram",
+    "pincode": "501301"
+  },
+  {
+    "id": "98",
+    "name": "Keesara",
+    "pincode": "501301"
+  },
+  {
+    "id": "99",
+    "name": "Keesaragutta",
+    "pincode": "501301"
+  },
+  {
+    "id": "100",
+    "name": "Korremal",
+    "pincode": "501301"
+  },
+  {
+    "id": "101",
+    "name": "Pratapsingaram",
+    "pincode": "501301"
+  },
+  {
+    "id": "102",
+    "name": "Rampallidiara",
+    "pincode": "501301"
+  },
+  {
+    "id": "103",
+    "name": "Rompalli",
+    "pincode": "501301"
+  },
+  {
+    "id": "104",
+    "name": "Thimmaipalli",
+    "pincode": "501301"
+  },
+  {
+    "id": "105",
+    "name": "Yadgarpalli",
+    "pincode": "501301"
+  },
+  {
+    "id": "106",
+    "name": "Medchal",
+    "pincode": "501401"
+  },
+  {
+    "id": "113",
+    "name": "Anandnagar",
+    "pincode": "500004"
+  },
+  {
+    "id": "114",
+    "name": "Bazarghat",
+    "pincode": "500004"
+  },
+  {
+    "id": "115",
+    "name": "Khairatabad",
+    "pincode": "500004"
+  },
+  {
+    "id": "116",
+    "name": "Padmavathi Nagar",
+    "pincode": "500004"
+  },
+  {
+    "id": "117",
+    "name": "Parishram Bhawan",
+    "pincode": "500004"
+  },
+  {
+    "id": "118",
+    "name": "Shyam Nagar",
+    "pincode": "500004"
+  },
+  {
+    "id": "119",
+    "name": "Vidhan Sabha",
+    "pincode": "500004"
+  },
+  {
+    "id": "120",
+    "name": "Administrative Buildings",
+    "pincode": "500007"
+  },
+  {
+    "id": "121",
+    "name": "Iict",
+    "pincode": "500007"
+  },
+  {
+    "id": "122",
+    "name": "Jama I osmania",
+    "pincode": "500007"
+  },
+  {
+    "id": "123",
+    "name": "Zindatelismath",
+    "pincode": "500013"
+  },
+  {
+    "id": "124",
+    "name": "Bharat Nagar colony",
+    "pincode": "500018"
+  },
+  {
+    "id": "125",
+    "name": "Erragadda",
+    "pincode": "500018"
+  },
+  {
+    "id": "126",
+    "name": "Moosapet",
+    "pincode": "500018"
+  },
+  {
+    "id": "127",
+    "name": "Ashoknagar",
+    "pincode": "500020"
+  },
+  {
+    "id": "128",
+    "name": "Golconda Chowrastha",
+    "pincode": "500020"
+  },
+  {
+    "id": "129",
+    "name": "Musheerabad Dso",
+    "pincode": "500020"
+  },
+  {
+    "id": "130",
+    "name": "Musheerabad Ndso",
+    "pincode": "500020"
+  },
+  {
+    "id": "131",
+    "name": "Zamistanpur",
+    "pincode": "500020"
+  },
+  {
+    "id": "132",
+    "name": "Central Secretariat",
+    "pincode": "500022"
+  },
+  {
+    "id": "133",
+    "name": "Reinbazar",
+    "pincode": "500023"
+  },
+  {
+    "id": "134",
+    "name": "Barkatpura",
+    "pincode": "500027"
+  },
+  {
+    "id": "135",
+    "name": "Nimboliadda",
+    "pincode": "500027"
+  },
+  {
+    "id": "136",
+    "name": "Stn Kachiguda",
+    "pincode": "500027"
+  },
+  {
+    "id": "137",
+    "name": "Gagan Mahal",
+    "pincode": "500029"
+  },
+  {
+    "id": "138",
+    "name": "Himayathnagar",
+    "pincode": "500029"
+  },
+  {
+    "id": "139",
+    "name": "Narayanguda",
+    "pincode": "500029"
+  },
+  {
+    "id": "140",
+    "name": "Old Mla quarters",
+    "pincode": "500029"
+  },
+  {
+    "id": "141",
+    "name": "Ramakrishna Mutt",
+    "pincode": "500029"
+  },
+  {
+    "id": "142",
+    "name": "Jubilee Hills",
+    "pincode": "500033"
+  },
+  {
+    "id": "143",
+    "name": "South Banjara hills",
+    "pincode": "500033"
+  },
+  {
+    "id": "144",
+    "name": "Banjara Hills",
+    "pincode": "500034"
+  },
+  {
+    "id": "145",
+    "name": "Sanjeev Reddy nagar",
+    "pincode": "500038"
+  },
+  {
+    "id": "146",
+    "name": "Vengal Rao nagar",
+    "pincode": "500038"
+  },
+  {
+    "id": "147",
+    "name": "Raj Bhawan",
+    "pincode": "500041"
+  },
+  {
+    "id": "148",
+    "name": "Ambernagar",
+    "pincode": "500044"
+  },
+  {
+    "id": "149",
+    "name": "Andhra Mahila sabha",
+    "pincode": "500044"
+  },
+  {
+    "id": "150",
+    "name": "Nallakunta",
+    "pincode": "500044"
+  },
+  {
+    "id": "151",
+    "name": "New Nallakunta",
+    "pincode": "500044"
+  },
+  {
+    "id": "152",
+    "name": "Vidyanagar",
+    "pincode": "500044"
+  },
+  {
+    "id": "153",
+    "name": "A.Gs. staff quarters",
+    "pincode": "500045"
+  },
+  {
+    "id": "154",
+    "name": "Rahmath Nagar",
+    "pincode": "500045"
+  },
+  {
+    "id": "155",
+    "name": "Yousufguda",
+    "pincode": "500045"
+  },
+  {
+    "id": "156",
+    "name": "New Mla quarters",
+    "pincode": "500063"
+  },
+  {
+    "id": "157",
+    "name": "Srinagar Colony",
+    "pincode": "500073"
+  },
+  {
+    "id": "158",
+    "name": "Bholakpur",
+    "pincode": "500080"
+  },
+  {
+    "id": "159",
+    "name": "Gandhinagar",
+    "pincode": "500080"
+  },
+  {
+    "id": "160",
+    "name": "Turkapalliyadaram",
+    "pincode": "500080"
+  },
+  {
+    "id": "161",
+    "name": "Cyberabad",
+    "pincode": "500081"
+  },
+  {
+    "id": "162",
+    "name": "Madhapur",
+    "pincode": "500081"
+  },
+  {
+    "id": "163",
+    "name": "I.M.colony",
+    "pincode": "500082"
+  },
+  {
+    "id": "164",
+    "name": "Somajiguda",
+    "pincode": "500082"
+  },
+  {
+    "id": "165",
+    "name": "Ramkoti",
+    "pincode": "500095"
+  },
+  {
+    "id": "166",
+    "name": "State Bank of india",
+    "pincode": "500095"
+  },
+  {
+    "id": "167",
+    "name": "Gajularamaram",
+    "pincode": "500015"
+  },
+  {
+    "id": "168",
+    "name": "Jeedimetla",
+    "pincode": "500015"
+  },
+  {
+    "id": "169",
+    "name": "Kolthur",
+    "pincode": "500015"
+  },
+  {
+    "id": "170",
+    "name": "Kutbullapur",
+    "pincode": "500015"
+  },
+  {
+    "id": "171",
+    "name": "Suraram",
+    "pincode": "500015"
+  },
+  {
+    "id": "172",
+    "name": "Fathenagar Colony",
+    "pincode": "500018"
+  },
+  {
+    "id": "173",
+    "name": "Sanath Nagar colony",
+    "pincode": "500018"
+  },
+  {
+    "id": "174",
+    "name": "Sanathnagar I e",
+    "pincode": "500018"
+  },
+  {
+    "id": "175",
+    "name": "Swarajyanagar",
+    "pincode": "500018"
+  },
+  {
+    "id": "176",
+    "name": "Jntu Kukat pally",
+    "pincode": "500019"
+  },
+  {
+    "id": "177",
+    "name": "Lingampalli",
+    "pincode": "500032"
+  },
+  {
+    "id": "178",
+    "name": "Balanagar Township",
+    "pincode": "500037"
+  },
+  {
+    "id": "179",
+    "name": "Cie Balangar",
+    "pincode": "500037"
+  },
+  {
+    "id": "180",
+    "name": "Gachibowli",
+    "pincode": "500037"
+  },
+  {
+    "id": "181",
+    "name": "Rangareddynagar",
+    "pincode": "500042"
+  },
+  {
+    "id": "182",
+    "name": "Airforce Academy",
+    "pincode": "500043"
+  },
+  {
+    "id": "183",
+    "name": "Bowrampet",
+    "pincode": "500043"
+  },
+  {
+    "id": "184",
+    "name": "Dindigul",
+    "pincode": "500043"
+  },
+  {
+    "id": "185",
+    "name": "Gagillapur",
+    "pincode": "500043"
+  },
+  {
+    "id": "186",
+    "name": "Hal",
+    "pincode": "500043"
+  },
+  {
+    "id": "187",
+    "name": "Srirangavaram",
+    "pincode": "500049"
+  },
+  {
+    "id": "188",
+    "name": "Miyapur",
+    "pincode": "500050"
+  },
+  {
+    "id": "189",
+    "name": "Chandanagar",
+    "pincode": "500054"
+  },
+  {
+    "id": "190",
+    "name": "Hmt Township",
+    "pincode": "500055"
+  },
+  {
+    "id": "191",
+    "name": "Ida Jeedimetla",
+    "pincode": "500072"
+  },
+  {
+    "id": "192",
+    "name": "Kphb Colony",
+    "pincode": "500072"
+  },
+  {
+    "id": "193",
+    "name": "Kukatpally",
+    "pincode": "500083"
+  },
+  {
+    "id": "194",
+    "name": "Kondapur",
+    "pincode": "500084"
+  },
+  {
+    "id": "195",
+    "name": "Nagaram",
+    "pincode": "500084"
+  },
+  {
+    "id": "196",
+    "name": "Kothaguda",
+    "pincode": "500085"
+  },
+  {
+    "id": "197",
+    "name": "Appa Himayathsagar",
+    "pincode": "500001"
+  },
+  {
+    "id": "198",
+    "name": "Aziz Nagar",
+    "pincode": "500001"
+  },
+  {
+    "id": "199",
+    "name": "C.B.i.t",
+    "pincode": "500001"
+  },
+  {
+    "id": "200",
+    "name": "Gandipet",
+    "pincode": "500001"
+  },
+  {
+    "id": "201",
+    "name": "Himayathnagar",
+    "pincode": "500001"
+  },
+  {
+    "id": "202",
+    "name": "Manovikasnagar",
+    "pincode": "500001"
+  },
+  {
+    "id": "203",
+    "name": "Janwada",
+    "pincode": "500002"
+  },
+  {
+    "id": "204",
+    "name": "Kokapet",
+    "pincode": "500002"
+  },
+  {
+    "id": "205",
+    "name": "Mancherevula",
+    "pincode": "500002"
+  },
+  {
+    "id": "206",
+    "name": "Narsingi",
+    "pincode": "500005"
+  },
+  {
+    "id": "207",
+    "name": "Nisa Hakimpet",
+    "pincode": "500005"
+  },
+  {
+    "id": "208",
+    "name": "Puppalguda",
+    "pincode": "500005"
+  },
+  {
+    "id": "209",
+    "name": "Wattinagulapalli",
+    "pincode": "500005"
+  },
+  {
+    "id": "210",
+    "name": "Gandhi Bhawan",
+    "pincode": "500005"
+  },
+  {
+    "id": "211",
+    "name": "Hindi Bhawan",
+    "pincode": "500006"
+  },
+  {
+    "id": "212",
+    "name": "Hyderabad.",
+    "pincode": "500006"
+  },
+  {
+    "id": "213",
+    "name": "Moazzampura",
+    "pincode": "500006"
+  },
+  {
+    "id": "214",
+    "name": "Balapur",
+    "pincode": "500008"
+  },
+  {
+    "id": "215",
+    "name": "Crp Camp",
+    "pincode": "500008"
+  },
+  {
+    "id": "216",
+    "name": "Hyderabad Jubilee",
+    "pincode": "500008"
+  },
+  {
+    "id": "217",
+    "name": "Keshogiri",
+    "pincode": "500008"
+  },
+  {
+    "id": "218",
+    "name": "Mamidipalli",
+    "pincode": "500008"
+  },
+  {
+    "id": "219",
+    "name": "Moghalpura",
+    "pincode": "500008"
+  },
+  {
+    "id": "220",
+    "name": "Seetharampet",
+    "pincode": "500008"
+  },
+  {
+    "id": "221",
+    "name": "State Bank of hyderabad",
+    "pincode": "500008"
+  },
+  {
+    "id": "222",
+    "name": "Tagarikanaka",
+    "pincode": "500008"
+  },
+  {
+    "id": "223",
+    "name": "Pahadishareef",
+    "pincode": "500009"
+  },
+  {
+    "id": "224",
+    "name": "Dhoolpet",
+    "pincode": "500012"
+  },
+  {
+    "id": "225",
+    "name": "Karwan Sahu",
+    "pincode": "500012"
+  },
+  {
+    "id": "226",
+    "name": "Mangalhat",
+    "pincode": "500012"
+  },
+  {
+    "id": "227",
+    "name": "Dargah Hussain shahwali",
+    "pincode": "500015"
+  },
+  {
+    "id": "228",
+    "name": "Golconda",
+    "pincode": "500015"
+  },
+  {
+    "id": "229",
+    "name": "Hyder Shah kote",
+    "pincode": "500015"
+  },
+  {
+    "id": "230",
+    "name": "Kakatiya Nagar",
+    "pincode": "500015"
+  },
+  {
+    "id": "231",
+    "name": "Lunger House",
+    "pincode": "500023"
+  },
+  {
+    "id": "232",
+    "name": "Nanakramguda",
+    "pincode": "500024"
+  },
+  {
+    "id": "233",
+    "name": "Sakkubai Nagar",
+    "pincode": "500024"
+  },
+  {
+    "id": "234",
+    "name": "Toli Chowki",
+    "pincode": "500024"
+  },
+  {
+    "id": "235",
+    "name": "Afzalgunj",
+    "pincode": "500025"
+  },
+  {
+    "id": "236",
+    "name": "Aliabad",
+    "pincode": "500028"
+  },
+  {
+    "id": "237",
+    "name": "Anantaram",
+    "pincode": "500028"
+  },
+  {
+    "id": "238",
+    "name": "Begumbazar",
+    "pincode": "500028"
+  },
+  {
+    "id": "239",
+    "name": "Osmania General hospital",
+    "pincode": "500028"
+  },
+  {
+    "id": "240",
+    "name": "Atvelli",
+    "pincode": "500030"
+  },
+  {
+    "id": "241",
+    "name": "Chanchalguda",
+    "pincode": "500030"
+  },
+  {
+    "id": "242",
+    "name": "Dabirpur",
+    "pincode": "500030"
+  },
+  {
+    "id": "243",
+    "name": "Yakutpura",
+    "pincode": "500030"
+  },
+  {
+    "id": "244",
+    "name": "Darushifa",
+    "pincode": "500031"
+  },
+  {
+    "id": "245",
+    "name": "Dattatreya Colony",
+    "pincode": "500035"
+  },
+  {
+    "id": "246",
+    "name": "Himmatnagar",
+    "pincode": "500035"
+  },
+  {
+    "id": "247",
+    "name": "Sahifa",
+    "pincode": "500035"
+  },
+  {
+    "id": "248",
+    "name": "A.G.college",
+    "pincode": "500036"
+  },
+  {
+    "id": "249",
+    "name": "Humayunnagar",
+    "pincode": "500036"
+  },
+  {
+    "id": "250",
+    "name": "Murad Nagar",
+    "pincode": "500036"
+  },
+  {
+    "id": "251",
+    "name": "Shantinagar",
+    "pincode": "500036"
+  },
+  {
+    "id": "252",
+    "name": "Aperl",
+    "pincode": "500048"
+  },
+  {
+    "id": "253",
+    "name": "Kismathpur",
+    "pincode": "500048"
+  },
+  {
+    "id": "254",
+    "name": "Huda Residential complex",
+    "pincode": "500052"
+  },
+  {
+    "id": "255",
+    "name": "Ibrahim Bagh lines",
+    "pincode": "500052"
+  },
+  {
+    "id": "256",
+    "name": "Rajendranagar",
+    "pincode": "500052"
+  },
+  {
+    "id": "257",
+    "name": "Ramakrishanapuram",
+    "pincode": "500053"
+  },
+  {
+    "id": "258",
+    "name": "Saroornagar",
+    "pincode": "500053"
+  },
+  {
+    "id": "259",
+    "name": "Malakpet Colony",
+    "pincode": "500057"
+  },
+  {
+    "id": "260",
+    "name": "Old Malakpet",
+    "pincode": "500058"
+  },
+  {
+    "id": "261",
+    "name": "Osmannagar",
+    "pincode": "500058"
+  },
+  {
+    "id": "262",
+    "name": "Attapur",
+    "pincode": "500059"
+  },
+  {
+    "id": "263",
+    "name": "Hyderguda",
+    "pincode": "500059"
+  },
+  {
+    "id": "264",
+    "name": "Sripuram Colony",
+    "pincode": "500059"
+  },
+  {
+    "id": "265",
+    "name": "Hasannagar",
+    "pincode": "500060"
+  },
+  {
+    "id": "266",
+    "name": "Shivarampalli",
+    "pincode": "500060"
+  },
+  {
+    "id": "267",
+    "name": "Svpnpa",
+    "pincode": "500060"
+  },
+  {
+    "id": "268",
+    "name": "Badangpet",
+    "pincode": "500064"
+  },
+  {
+    "id": "269",
+    "name": "Falaknuma",
+    "pincode": "500064"
+  },
+  {
+    "id": "270",
+    "name": "Kanchanbagh",
+    "pincode": "500064"
+  },
+  {
+    "id": "271",
+    "name": "Uppuguda",
+    "pincode": "500064"
+  },
+  {
+    "id": "272",
+    "name": "Vijay Nagar colony",
+    "pincode": "500064"
+  },
+  {
+    "id": "273",
+    "name": "Dilsukhnagar Colony",
+    "pincode": "500065"
+  },
+  {
+    "id": "274",
+    "name": "Saidabad",
+    "pincode": "500065"
+  },
+  {
+    "id": "275",
+    "name": "Saidabad Colony",
+    "pincode": "500065"
+  },
+  {
+    "id": "276",
+    "name": "Santoshnagar Colony",
+    "pincode": "500065"
+  },
+  {
+    "id": "277",
+    "name": "New Maruthi nagar",
+    "pincode": "500066"
+  },
+  {
+    "id": "278",
+    "name": "P & t colony",
+    "pincode": "500067"
+  },
+  {
+    "id": "279",
+    "name": "Bahadurpura",
+    "pincode": "500068"
+  },
+  {
+    "id": "280",
+    "name": "Chandulalbaradari",
+    "pincode": "500068"
+  },
+  {
+    "id": "281",
+    "name": "Hussainialam",
+    "pincode": "500069"
+  },
+  {
+    "id": "282",
+    "name": "Kishanbagh",
+    "pincode": "500070"
+  },
+  {
+    "id": "283",
+    "name": "Tadbun",
+    "pincode": "500070"
+  },
+  {
+    "id": "284",
+    "name": "Fatehdarwaza",
+    "pincode": "500074"
+  },
+  {
+    "id": "285",
+    "name": "Quazipura",
+    "pincode": "500074"
+  },
+  {
+    "id": "286",
+    "name": "Gsi(sr) Bandlaguda",
+    "pincode": "500075"
+  },
+  {
+    "id": "287",
+    "name": "High Court",
+    "pincode": "500075"
+  },
+  {
+    "id": "288",
+    "name": "Kulsumpura",
+    "pincode": "500075"
+  },
+  {
+    "id": "289",
+    "name": "L B nagar",
+    "pincode": "500075"
+  },
+  {
+    "id": "290",
+    "name": "Mansoorabad",
+    "pincode": "500075"
+  },
+  {
+    "id": "291",
+    "name": "R.C.imarat",
+    "pincode": "500075"
+  },
+  {
+    "id": "292",
+    "name": "Shahalibanda",
+    "pincode": "500075"
+  },
+  {
+    "id": "293",
+    "name": "Sultanshahi",
+    "pincode": "500075"
+  },
+  {
+    "id": "294",
+    "name": "Vaidehinagar",
+    "pincode": "500075"
+  },
+  {
+    "id": "295",
+    "name": "Vanastalipuram",
+    "pincode": "500075"
+  },
+  {
+    "id": "296",
+    "name": "Rangareddy Dt courts",
+    "pincode": "500077"
+  },
+  {
+    "id": "297",
+    "name": "Kattedan Ie",
+    "pincode": "500078"
+  },
+  {
+    "id": "298",
+    "name": "Jillellaguda",
+    "pincode": "500079"
+  },
+  {
+    "id": "299",
+    "name": "Karmanghat",
+    "pincode": "500079"
+  },
+  {
+    "id": "300",
+    "name": "Vaishalinagar",
+    "pincode": "500079"
+  },
+  {
+    "id": "301",
+    "name": "Putlibowli",
+    "pincode": "500095"
+  },
+  {
+    "id": "302",
+    "name": "Vikarabad",
+    "pincode": "501101"
+  },
+  {
+    "id": "303",
+    "name": "Anantagiri",
+    "pincode": "501201"
+  },
+  {
+    "id": "304",
+    "name": "Shamshabad",
+    "pincode": "501218"
+  },
+  {
+    "id": "305",
+    "name": "Gaganpahad",
+    "pincode": "501323"
+  },
+  {
+    "id": "306",
+    "name": "Chilkur",
+    "pincode": "501504"
+  },
+  {
+    "id": "307",
+    "name": "Chinna Mangalaram",
+    "pincode": "501504"
+  },
+  {
+    "id": "308",
+    "name": "Kanakamamidi",
+    "pincode": "501504"
+  },
+  {
+    "id": "309",
+    "name": "Kethireddipalli",
+    "pincode": "501504"
+  },
+  {
+    "id": "310",
+    "name": "Maharajpet",
+    "pincode": "501504"
+  },
+  {
+    "id": "311",
+    "name": "Moinabad",
+    "pincode": "501504"
+  },
+  {
+    "id": "312",
+    "name": "Pedda Mangalaram",
+    "pincode": "501504"
+  },
+  {
+    "id": "313",
+    "name": "Surangal",
+    "pincode": "501504"
+  },
+  {
+    "id": "314",
+    "name": "Venkatapur",
+    "pincode": "501504"
+  },
+  {
+    "id": "315",
+    "name": "Bandaraviryal",
+    "pincode": "501505"
+  },
+  {
+    "id": "316",
+    "name": "Gowrelli",
+    "pincode": "501505"
+  },
+  {
+    "id": "317",
+    "name": "Hayatnagar",
+    "pincode": "501505"
+  },
+  {
+    "id": "318",
+    "name": "Kavadpalli",
+    "pincode": "501505"
+  },
+  {
+    "id": "319",
+    "name": "Kuntloor",
+    "pincode": "501505"
+  },
+  {
+    "id": "320",
+    "name": "Pasmamala",
+    "pincode": "501505"
+  },
+  {
+    "id": "321",
+    "name": "Pedda Amberpet",
+    "pincode": "501505"
+  },
+  {
+    "id": "322",
+    "name": "Qutubullapur",
+    "pincode": "501505"
+  },
+  {
+    "id": "323",
+    "name": "Adibatla",
+    "pincode": "501510"
+  },
+  {
+    "id": "324",
+    "name": "Kongarakalan",
+    "pincode": "501510"
+  },
+  {
+    "id": "325",
+    "name": "Kongaraviryla",
+    "pincode": "501510"
+  },
+  {
+    "id": "326",
+    "name": "Mangalpalli",
+    "pincode": "501510"
+  },
+  {
+    "id": "327",
+    "name": "Nadergul",
+    "pincode": "501510"
+  },
+  {
+    "id": "328",
+    "name": "Ragannaguda X roads",
+    "pincode": "501510"
+  },
+  {
+    "id": "329",
+    "name": "Ramdaspalli",
+    "pincode": "501510"
+  },
+  {
+    "id": "330",
+    "name": "Seriguda",
+    "pincode": "501510"
+  },
+  {
+    "id": "331",
+    "name": "Turkayamzal",
+    "pincode": "501510"
+  },
+  {
+    "id": "332",
+    "name": "Vinjapur",
+    "pincode": "501510"
+  }
+]
+}

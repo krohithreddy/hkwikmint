@@ -23,6 +23,7 @@ public class MyErrorcodeRecyclerViewAdapter extends RecyclerView.Adapter<MyError
 
     public MyErrorcodeRecyclerViewAdapter(List<DummyItem> items, OnListFragmentInteractionListener listener) {
         mValues = items;
+        System.out.println(items);
         mListener = listener;
     }
 
