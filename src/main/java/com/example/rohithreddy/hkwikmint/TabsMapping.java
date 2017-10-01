@@ -1,6 +1,7 @@
 package com.example.rohithreddy.hkwikmint;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,6 +11,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 /**
@@ -84,10 +86,21 @@ public class TabsMapping extends Fragment {
 
         TabLayout tabLayout = (TabLayout) view.findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+        tabLayout.setTabTextColors(Color.rgb(69, 90, 100), Color.rgb(69, 90, 100));
         SectionsPageAdapter adapter = new SectionsPageAdapter(getChildFragmentManager());
         adapter.addFrament(new Mapping(), "MAP");
         adapter.addFrament(new maphistory(), "HISTORY");
         mViewPager.setAdapter(adapter);
+        TextView tabOne = (TextView) LayoutInflater.from(getContext()).inflate(R.layout.custom_tab, null);
+        tabOne.setHeight(50);
+        tabOne.setWidth(170);
+        tabOne.setText("MAP");
+        tabLayout.getTabAt(0).setCustomView(tabOne);
+        TextView tabtwo = (TextView) LayoutInflater.from(getContext()).inflate(R.layout.custom_tab, null);
+        tabtwo.setText("HISTORY");
+        tabtwo.setHeight(50);
+        tabOne.setWidth(170);
+        tabLayout.getTabAt(1).setCustomView(tabtwo);
 
     }
     // TODO: Rename method, update argument and hook method into UI event

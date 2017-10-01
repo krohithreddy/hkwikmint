@@ -5,45 +5,48 @@
     tools:context="com.example.rohithreddy.hkwikmint.Settings">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
+        android:id="@+id/tech"
+        android:layout_width="match_parent"
+        android:background="#e7e3e3"
+        android:textAlignment="textStart"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Tech Support"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="83dp"
-        android:text="Button" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/Errorcodes"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#e7e3e3"
+        android:textAlignment="textStart"
         android:layout_height="wrap_content"
-        android:layout_marginTop="58dp"
+        android:layout_marginTop="50dp"
         android:text="errorcodes"
-        android:layout_below="@+id/button4"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/tech"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Errorcodes"
+        android:layout_below="@+id/update"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="102dp"
+        android:layout_marginTop="50dp"
         android:text="version" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:background="#e7e3e3"
+        android:textAlignment="textStart"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button4"
+        android:layout_marginTop="50dp"
         android:layout_below="@+id/Errorcodes"
-        android:layout_marginTop="17dp"
-        android:text="update" />
+        android:text="update"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

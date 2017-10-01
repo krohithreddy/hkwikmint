@@ -1,5 +1,6 @@
 package com.example.rohithreddy.hkwikmint;
 
+import android.annotation.TargetApi;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -8,9 +9,12 @@ import android.graphics.Color;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.internal.BottomNavigationMenuView;
 import android.support.design.widget.BottomNavigationView;
@@ -30,6 +34,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.CompoundButton;
@@ -57,8 +62,9 @@ import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    public static int navItemIndex = 0;
     public static String mapvalue ="";
-
+    Window window;
     MobileNumber MN;
         int draweropencount=0;
         boolean internet;
@@ -68,6 +74,7 @@ public class MainActivity extends AppCompatActivity
         Scan2 Scan2;
         Scan Scan;
      Barcode barcode;
+    Toolbar toolbar;
     public static final int REQUEST_CODE = 100;
     String datetime = "Hello world!";
     UserSessionManager session;
@@ -96,15 +103,20 @@ public class MainActivity extends AppCompatActivity
         pass = user.get(UserSessionManager.KEY_PASS);
 
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        window = getWindow();
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
-
+// add FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS flag to the window
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
+
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -317,11 +329,25 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
+        }    else if(navItemIndex!=0){
+            Fragment fragment = null;
+            fragment = new Home();
+            if (fragment != null) {
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, fragment);
+                ft.commit();
+            }
+            bottomNavigationView.getMenu().findItem(R.id.action_item3).setChecked(true);
+            navigationView.getMenu().findItem(R.id.Mapping).setChecked(true);
+        }
+        else {
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            startActivity(intent);
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -343,6 +369,8 @@ public class MainActivity extends AppCompatActivity
             }
         };
         if (session.isattendancestarted()) {
+            toolbar.setBackgroundColor(Color.rgb(0, 145, 234));
+            window.setStatusBarColor(Color.rgb(0, 145, 234));
             mSwitchShowSecure.setOnCheckedChangeListener (null);
             mSwitchShowSecure.setChecked(true);
             mSwitchShowSecure.setOnCheckedChangeListener(switchListener);
@@ -354,6 +382,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -362,6 +391,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.action_settings) {
             if(session.isattendancestarted()){
                 session.stopattendance();
+                toolbar.setBackgroundColor(Color.rgb(69, 90, 100));
+                window.setStatusBarColor(Color.rgb(69, 90, 100));
                 GiveAttendance("Off");
 
             }
@@ -371,8 +402,33 @@ public class MainActivity extends AppCompatActivity
             //repeatTask.cancel();
             return true;
         }
+        if (id == R.id.Support) {
+            Intent intent = new Intent(Intent.ACTION_DIAL);
+            intent.setData(Uri.parse("tel:8967754309"));
+            startActivity(intent);
+            return true;
+        }
+        else if (id == R.id.Setting) {
+            Fragment fragment = null;
+            fragment = new Settings();
+            if (fragment != null) {
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, fragment);
+                ft.commit();
+            }
+        }
+        else if (id == R.id.Sync) {
+            Fragment fragment = null;
+            fragment = new Sync();
+            if (fragment != null) {
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, fragment);
+                ft.commit();
+            }
+        }
 
-        return super.onOptionsItemSelected(item);
+
+            return super.onOptionsItemSelected(item);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -556,6 +612,7 @@ public class MainActivity extends AppCompatActivity
                     }
 
 
+                    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
                     @Override
                     protected void onPostExecute(Void result) {
                         super.onPostExecute(result);
@@ -582,6 +639,8 @@ public class MainActivity extends AppCompatActivity
                             //System.out.print("\n hereeeeeeee");
                             //   mSwitchShowSecure.setChecked(true);
                             session.stopattendance();
+                            toolbar.setBackgroundColor(Color.rgb(69, 90, 100));
+                            window.setStatusBarColor(Color.rgb(69, 90, 100));
 
                             Toast.makeText(getApplicationContext(), "recored off duty", Toast.LENGTH_LONG).show();
                         } else if (result1.equals("success")) {
@@ -590,6 +649,9 @@ public class MainActivity extends AppCompatActivity
                             System.out.print("starting session");
                             //  mSwitchShowSecure.setChecked(false);
                             session.startattendance();
+                            toolbar.setBackgroundColor(Color.rgb(0, 145, 234));
+
+                            window.setStatusBarColor(Color.rgb(0, 145, 234));
                             System.out.print("starting session");
                             // bool = false;
                             Toast.makeText(getApplicationContext(), "recored on duty", Toast.LENGTH_LONG).show();

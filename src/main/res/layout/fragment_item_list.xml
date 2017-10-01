@@ -23,10 +23,15 @@ tools:context="com.example.rohithreddy.hkwikmint.maphistory">
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:drawableTint="#ffa640"
-        android:hint="Outlet Name"
+        android:hint="Search"
         android:inputType="textPersonName"
         android:singleLine="true" />
 </FrameLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.rohithreddy.hkwikmint.maphistory">
     <android.support.v7.widget.RecyclerView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/list"
@@ -35,5 +40,6 @@ tools:context="com.example.rohithreddy.hkwikmint.maphistory">
         app:layoutManager="LinearLayoutManager"
         tools:listitem="@layout/fragment_item" >
     </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

@@ -9,7 +9,6 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:isScrollContainer="false"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
@@ -20,6 +19,7 @@
         android:fitsSystemWindows="true"
         tools:openDrawer="start">
         <android.support.design.widget.AppBarLayout
+            android:id="@+id/mainbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/AppTheme.AppBarOverlay">

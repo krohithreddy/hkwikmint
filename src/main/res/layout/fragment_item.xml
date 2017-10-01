@@ -54,6 +54,7 @@
                 android:layout_height="30dp"
                 android:layout_alignStart="@+id/outletname"
                 android:layout_below="@+id/outletname"
+                android:layout_marginRight="10dp"
                 android:text="fullname"
                 android:textSize="20sp" />
 
