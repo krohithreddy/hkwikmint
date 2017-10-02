@@ -1,52 +1,87 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.rohithreddy.hkwikmint.Settings">
 
     <!-- TODO: Update blank fragment layout -->
-
-    <Button
-        android:id="@+id/tech"
-        android:layout_width="match_parent"
-        android:background="#e7e3e3"
-        android:textAlignment="textStart"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_marginTop="50dp"
-        android:text="Tech Support"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:id="@+id/Errorcodes"
-        android:layout_width="match_parent"
         android:background="#e7e3e3"
-        android:textAlignment="textStart"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/tech"
+            android:layout_width="330dp"
+            android:background="#e7e3e3"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:text="Tech Support"
+           />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_chevron_right_black_36dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_marginTop="50dp"
-        android:text="errorcodes"
-        android:layout_below="@+id/tech"
-        android:layout_alignParentStart="true" />
+        android:background="#e7e3e3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/Errorcodes"
+            android:layout_width="330dp"
+            android:background="#e7e3e3"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:text="errorcodes" />
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_chevron_right_black_36dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:background="#e7e3e3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/update"
+            android:layout_width="330dp"
+            android:background="#e7e3e3"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:text="update" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_chevron_right_black_36dp" />
+    </LinearLayout>
+
+
+
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
         android:layout_height="wrap_content"
         android:layout_below="@+id/update"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="version" />
 
-    <Button
-        android:id="@+id/update"
-        android:layout_width="match_parent"
-        android:background="#e7e3e3"
-        android:textAlignment="textStart"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_below="@+id/Errorcodes"
-        android:text="update"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
 
-</RelativeLayout>
+
+</LinearLayout>

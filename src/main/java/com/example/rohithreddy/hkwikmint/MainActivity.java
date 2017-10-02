@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity
     public static int navItemIndex = 0;
     public static String mapvalue ="";
     Window window;
+    int id ;
     MobileNumber MN;
         int draweropencount=0;
         boolean internet;
@@ -208,6 +209,7 @@ public class MainActivity extends AppCompatActivity
             Intent intent = getIntent();
             System.out.println("outside---------------"+intent.getStringExtra("barcode"));
             String code = intent.getStringExtra("barcode");
+            intent.getIntExtra("id",id);
             Fragment fragment = null;
             Scan2.button=0;
             fragment = new Register();
@@ -698,6 +700,9 @@ public class MainActivity extends AppCompatActivity
 
         }
       //  new onsubmit(MainActivity.this);
+    }
+    public int getid(){
+        return id;
     }
 //    @Override
 //    public void onActivityResult(int requestCode, int resultCode, Intent data) {

@@ -184,9 +184,11 @@ public class Register extends Fragment {
             rid=routeid;
             d.close();
         }
+        MainActivity activity = (MainActivity) getActivity();
+        id = activity.getid();
 
-        if(mainscreen.mapvalue.trim().length() != 0){
-            id=Integer.parseInt(mainscreen.mapvalue);
+        if(id != 0){
+           // id=Integer.parseInt(mainscreen.mapvalue);
             map=1;
             c = db.rawQuery("SELECT * FROM mapusers WHERE id="+id, null);
             if (!(c.moveToFirst()) || c.getCount() == 0){

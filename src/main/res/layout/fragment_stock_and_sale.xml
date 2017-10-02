@@ -11,9 +11,80 @@
     <LinearLayout
         android:id="@+id/sas1"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:orientation="horizontal">
+        android:layout_height="140dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/on"
+                android:layout_width="130dp"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Outlet Name" />
 
+            <TextView
+                android:id="@+id/outletname"
+                android:layout_width="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Rohiht pan shop" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/fn"
+                android:layout_width="130dp"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Full Name" />
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="K rohith reddy" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/pn"
+                android:layout_width="130dp"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Phone Number" />
+
+            <TextView
+                android:id="@+id/phonenumber"
+                android:layout_width="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="9502177727" />
+        </LinearLayout>
     </LinearLayout>
 
     <android.support.design.widget.AppBarLayout

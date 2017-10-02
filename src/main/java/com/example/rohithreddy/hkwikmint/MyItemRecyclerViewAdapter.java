@@ -60,9 +60,10 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
             @Override
             public void onClick(View v) {
                 System.out.println(mapuserList.get(position).getPhonenumber());
-                Intent loginIntent = new Intent(mListener, Scan2.class);
 
-                mListener.startActivity(loginIntent);
+                Intent intent = new Intent(mListener, Scan2.class);
+                intent.putExtra("id",mapuserList.get(position).getId());
+                mListener.startActivity(intent);
 
             }
         });

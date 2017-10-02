@@ -33,11 +33,13 @@ public class Scan2 extends AppCompatActivity {
     CameraSource cameraSource;
     SurfaceHolder holder;
     public static int button =0;
-
+    int id =0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan2);
+        Intent intent = getIntent();
+        intent.getIntExtra("id",id);
         Button back = (Button) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -99,6 +101,7 @@ public class Scan2 extends AppCompatActivity {
                     Intent intent = new Intent(Scan2.this,MainActivity.class);
                     Barcode code = barcodes.valueAt(0);
                     intent.putExtra("barcode",code.displayValue);
+                    intent.putExtra("id",id);
                     System.out.println(code.displayValue);
                     button =1;
                     Scan2.this.startActivity(intent);
