@@ -39,7 +39,8 @@ public class Scan2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan2);
         Intent intent = getIntent();
-        intent.getIntExtra("id",id);
+        id=intent.getIntExtra("id",0);
+        System.out.println("Scan2"+id);
         Button back = (Button) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener(){
             @Override

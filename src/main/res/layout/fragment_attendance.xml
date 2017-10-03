@@ -1,103 +1,261 @@
-<RelativeLayout
+<android.support.v4.widget.SwipeRefreshLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.rohithreddy.hkwikmint.Attendance">
 
-    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
     <RelativeLayout
-        android:id="@+id/l1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_height="match_parent"
+        tools:context="com.example.rohithreddy.hkwikmint.Attendance">
 
-        <TextView
-            android:id="@+id/minutes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="00"
-            android:textSize="60sp"
-            android:layout_centerVertical="true"
-            android:layout_toStartOf="@+id/colon" />
+        <!-- TODO: Update blank fragment layout -->
 
-        <TextView
-            android:id="@+id/colon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=":"
-            android:textSize="60sp"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-           />
 
-        <TextView
-            android:id="@+id/hour"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+            <!--<TextView-->
+
+            <!--android:text="00:00:00"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Timer"-->
+            <!--android:textSize="60dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_centerHorizontal="true" />-->
+
+
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="30sp" />
+            <!--<TextView-->
+            <!--android:id="@+id/minutes"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="00"-->
+            <!--android:textSize="60sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toStartOf="@+id/colon" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/colon"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=":"-->
+            <!--android:textSize="60sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/hour"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="00"-->
+            <!--android:textSize="60sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toEndOf="@+id/colon" />-->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="00"
-            android:textSize="60sp"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/colon" />
+            android:layout_below="@id/l1"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:id="@+id/linearLayout">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/monthlyavghrs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:maxLines="1"
+                        android:text="Monthly Avg "/>
+
+                    <TextView
+                        android:id="@+id/monthlyavghrsno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:text="000:00"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/totalavghrs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:maxLines="1"
+                        android:text="Total Avg"/>
+                    <TextView
+                        android:id="@+id/totalavghrsno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:maxLines="1"
+                        android:text="000:00"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout2"
+            android:paddingBottom="50dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true">
+
+                    <TextView
+                        android:id="@+id/fullwork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Full Working Days"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/halfwork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/fullwork"
+                        android:layout_marginTop="0dp"
+                        android:padding="10dp"
+                        android:text="Half Working Days"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/fullworkno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp"
+                        android:text="00"
+                        android:textSize="20sp"
+                        android:layout_alignStart="@+id/halfworkno" />
+
+                    <TextView
+                        android:id="@+id/leaves"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/halfwork"
+                        android:layout_marginTop="0dp"
+                        android:padding="10dp"
+                        android:text="Number of Leaves"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/halfworkno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/fullwork"
+                        android:padding="10dp"
+                        android:text="00"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/totalwork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/leaves"
+                        android:layout_marginTop="0dp"
+                        android:padding="10dp"
+                        android:text="Total Working Days"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/leaveno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/halfworkno"
+                        android:padding="10dp"
+                        android:text="00"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/totalworkno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:text="00"
+                        android:textSize="20sp"
+                        android:layout_alignStart="@+id/leaveno" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/l1"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/linearLayout">
-        <android.support.v7.widget.CardView
-            android:id="@+id/card_view"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_margin="8dp">
-
-            <TextView
-                android:id="@+id/lds"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:textSize="18sp"/>
-
-
-        </android.support.v7.widget.CardView>
-
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/card_view1"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_margin="8dp">
-
-        <TextView
-            android:id="@+id/t1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:textSize="18sp"/>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/card_view2"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_margin="8dp">
-
-        <TextView
-            android:id="@+id/t2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:textSize="18sp"/>
-        </android.support.v7.widget.CardView>
-
-
-    </LinearLayout>
-
-</RelativeLayout>
+</ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>

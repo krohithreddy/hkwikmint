@@ -61,18 +61,17 @@ public class ErrorcodeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_errorcode_list, container, false);
 
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.list);
+
         // Set the adapter
-        if (view instanceof RecyclerView) {
+
             Context context = view.getContext();
-            RecyclerView recyclerView = (RecyclerView) view;
             if (mColumnCount <= 1) {
                 recyclerView.setLayoutManager(new LinearLayoutManager(context));
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
             recyclerView.setAdapter(new MyErrorcodeRecyclerViewAdapter(DummyContent.ITEMS, mListener));
-
-        }
 
         return view;
     }

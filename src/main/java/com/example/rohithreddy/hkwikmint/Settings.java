@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 
 /**
@@ -68,12 +69,24 @@ public class Settings extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =inflater.inflate(R.layout.fragment_settings, container, false);
-        Button ro;
-        ro = view.findViewById(R.id.Errorcodes);
-        ro.setOnClickListener(new View.OnClickListener() {
+        RelativeLayout error,tech,update;
+        error = view.findViewById(R.id.Errorcodesview);
+        tech = view.findViewById(R.id.techview);
+        error.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 button=1;
+                Intent loginIntent = new Intent(getActivity(), MainActivity.class);
+                getActivity().startActivity(loginIntent);
+                //    mainscreen.displaySelectedScreen(R.id.nav_menu4);
+
+
+            }
+        });
+        tech.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                button=2;
                 Intent loginIntent = new Intent(getActivity(), MainActivity.class);
                 getActivity().startActivity(loginIntent);
                 //    mainscreen.displaySelectedScreen(R.id.nav_menu4);

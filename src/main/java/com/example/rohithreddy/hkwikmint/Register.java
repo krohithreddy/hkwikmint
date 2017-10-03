@@ -186,7 +186,7 @@ public class Register extends Fragment {
         }
         MainActivity activity = (MainActivity) getActivity();
         id = activity.getid();
-
+        System.out.println("register"+id);
         if(id != 0){
            // id=Integer.parseInt(mainscreen.mapvalue);
             map=1;

@@ -38,6 +38,7 @@ public class UserSessionManager {
     public static final String KEY_PASS = "PASS";
     public static final String KEY_FULLNAME = "FULLNAME";
     private static final String ATTENDANCE = "ISON";
+    private static final String VIDEO = "VIDEO";
 
     // Constructor
     public UserSessionManager(Context context){
@@ -75,6 +76,20 @@ public class UserSessionManager {
     public boolean isattendancestarted(){
         System.out.print("my session is "+ pref.getBoolean(ATTENDANCE, false)+" ");
         return pref.getBoolean(ATTENDANCE, false);
+    }
+    public void startvideo(){
+        System.out.print("\nVIDEO recorded");
+        editor.putBoolean(VIDEO, true);
+        editor.commit();
+    }
+    public void stopvideo(){
+        System.out.print("\nVIDEO recorded stipped");
+        editor.putBoolean(VIDEO, false);
+        editor.commit();
+    }
+    public boolean isvideostarted(){
+        System.out.print("my VIDEO is "+ pref.getBoolean(VIDEO, false)+" ");
+        return pref.getBoolean(VIDEO, false);
     }
 
 

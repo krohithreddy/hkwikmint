@@ -6,37 +6,37 @@
     tools:context="com.example.rohithreddy.hkwikmint.Settings">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
-        android:orientation="horizontal"
+    <RelativeLayout
+        android:id="@+id/techview"
         android:layout_marginTop="50dp"
         android:background="#e7e3e3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/tech"
-            android:layout_width="330dp"
+            android:layout_width="wrap_content"
             android:background="#e7e3e3"
             android:textAlignment="textStart"
             android:layout_height="wrap_content"
-            android:text="Tech Support"
-           />
+            android:text="Tech Support" />
 
         <ImageButton
             android:id="@+id/imageButton3"
-
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@drawable/ic_chevron_right_black_36dp" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/Errorcodesview"
         android:layout_marginTop="50dp"
         android:background="#e7e3e3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/Errorcodes"
-            android:layout_width="330dp"
+            android:layout_width="wrap_content"
             android:background="#e7e3e3"
             android:textAlignment="textStart"
             android:layout_height="wrap_content"
@@ -44,18 +44,20 @@
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
             android:background="@drawable/ic_chevron_right_black_36dp" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/updateview"
         android:layout_marginTop="50dp"
         android:background="#e7e3e3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/update"
-            android:layout_width="330dp"
+            android:layout_width="wrap_content"
             android:background="#e7e3e3"
             android:textAlignment="textStart"
             android:layout_height="wrap_content"
@@ -63,15 +65,13 @@
 
         <ImageButton
             android:id="@+id/imageButton1"
-
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:background="@drawable/ic_chevron_right_black_36dp" />
-    </LinearLayout>
+            android:layout_height="wrap_content"
 
-
-
-
+            android:background="@drawable/ic_chevron_right_black_36dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"

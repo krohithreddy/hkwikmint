@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.location.LocationManager;
@@ -52,6 +53,7 @@ import java.lang.reflect.Field;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.StringTokenizer;
 import java.util.Timer;
 
 import okhttp3.FormBody;
@@ -64,12 +66,20 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     public static int navItemIndex = 0;
     public static String mapvalue ="";
+    SharedPreferences sharedpreferences;
+    static int isattendancestarted=0 ;      //make this a sharedpreference
     Window window;
-    int id ;
+    int id ;String value;
     MobileNumber MN;
-        int draweropencount=0;
+    playvideo play;
+    VideoPromotion mainlObj;
+    Feedback feedback;
+    int draweropencount=0;
         boolean internet;
     private View navheader;
+    long StartTime;
+
+    Attendance Attendance =new Attendance();
         TextView textinternet,textlocation;
         Settings Settings;
         Scan2 Scan2;
@@ -205,27 +215,174 @@ public class MainActivity extends AppCompatActivity
                 ft.commit();
             }
         }
-        else if(Scan2.button==1){
-            Intent intent = getIntent();
-            System.out.println("outside---------------"+intent.getStringExtra("barcode"));
-            String code = intent.getStringExtra("barcode");
-            intent.getIntExtra("id",id);
+        else if(Settings.button==2){
             Fragment fragment = null;
-            Scan2.button=0;
-            fragment = new Register();
+            Settings.button=0;
+            fragment = new TechSupport();
             if (fragment != null) {
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                 ft.replace(R.id.content_frame, fragment);
                 ft.commit();
             }
         }
-        else if(Scan.button==1){
+        else if(Scan2.button==1){
+            String link="",KM="";
             Intent intent = getIntent();
             System.out.println("outside---------------"+intent.getStringExtra("barcode"));
             String code = intent.getStringExtra("barcode");
+            StringTokenizer st = new StringTokenizer(code,"?=");
+            if(st.hasMoreTokens()) {
+                 link = st.nextToken();
+            }
+            if(st.hasMoreTokens()) {
+                 KM = st.nextToken();
+            }
+            if(st.hasMoreTokens()) {
+              value = st.nextToken();
+            }
+            if(link.contains("http://kwikmint.in/")&& KM.contains("KM")) {
+                id = intent.getIntExtra("id", 0);
+                Fragment fragment = null;
+                Scan2.button = 0;
+                fragment = new Register();
+                if (fragment != null) {
+                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                    ft.replace(R.id.content_frame, fragment);
+                    ft.commit();
+                }
+            }
+            else{
+                id = intent.getIntExtra("id", 0);
+                Fragment fragment = null;
+                Scan2.button = 0;
+                fragment = new TabsMapping();
+                Toast.makeText(getApplicationContext(), "Try with a valid QRcode", Toast.LENGTH_LONG).show();
+                if (fragment != null) {
+                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                    ft.replace(R.id.content_frame, fragment);
+                    ft.commit();
+                }
+            }
+        }
+        else if(Scan.button==1) {
+            String link="",KM="";
+            Intent intent = getIntent();
+            System.out.println("outside---------------"+intent.getStringExtra("barcode"));
+            String code = intent.getStringExtra("barcode");
+            StringTokenizer st = new StringTokenizer(code,"?=");
+            if(st.hasMoreTokens()) {
+                link = st.nextToken();
+            }
+            if(st.hasMoreTokens()) {
+                KM = st.nextToken();
+            }
+            if(st.hasMoreTokens()) {
+                value = st.nextToken();
+            }
+            if(link.contains("http://kwikmint.in/")&& KM.contains("KM")) {
+                Fragment fragment = null;
+                Scan.button = 0;
+                fragment = new StockAndSale();
+                if (fragment != null) {
+                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                    ft.replace(R.id.content_frame, fragment);
+                    ft.commit();
+                }
+            }
+            else {
+                Fragment fragment = null;
+                Scan.button = 0;
+                fragment = new Home();
+                Toast.makeText(getApplicationContext(), "Try with a valid QRcode", Toast.LENGTH_LONG).show();
+                if (fragment != null) {
+                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                    ft.replace(R.id.content_frame, fragment);
+                    ft.commit();
+                }
+
+            }
+        }
+        else if(mainlObj.button==3){
+            mainlObj.button=0;
+            Intent playvideo = new Intent(MainActivity.this, playvideo.class);
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
+            datetime = sdf.format(new Date());
+
+            GPSTracker gps = new GPSTracker(MainActivity.this);
+            if(gps.canGetLocation()){
+                latitude = gps.getLatitude();
+                longitude = gps.getLongitude();
+                if(latitude == 0.0 ){
+                    Toast.makeText(getApplicationContext(), "Wait for location and try again",
+                            Toast.LENGTH_SHORT).show();
+
+                }
+                else {
+                    Bundle b = new Bundle();
+                    b.putString("start", datetime);
+                    b.putString("phone", phone);
+                    b.putDouble("lng",longitude );
+                    b.putDouble("lat", latitude);
+                    playvideo.putExtras(b);
+                    System.out.println(b);
+                    MainActivity.this.startActivity(playvideo);
+                }
+            }
+            Bundle b = new Bundle();
+            b.putString("start", datetime);
+            b.putString("phone", phone);
+            b.putDouble("lng",0.0 );
+            b.putDouble("lat", 0.0);
+            playvideo.putExtras(b);
+            System.out.println(b);
+            MainActivity.this.startActivity(playvideo);
+        }
+        else if(mainlObj.button==4){
             Fragment fragment = null;
-            Scan.button=0;
-            fragment = new StockAndSale();
+            mainlObj.button=0;
+            fragment = new Feedback();
+            if (fragment != null) {
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, fragment);
+                ft.commit();
+            }
+        }
+        else if(mainlObj.button==1){
+            Fragment fragment = null;
+            mainlObj.button=0;
+            fragment = new VideoPromotion();
+            if (fragment != null) {
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.content_frame, fragment);
+                ft.commit();
+            }
+        }
+        else if(play.button==1) {
+            play.button = 0;
+            if (session.isvideostarted()) {
+                //session.stopattendance();
+                Fragment fragment = null;
+                fragment = new Feedback();
+                if (fragment != null) {
+                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                    ft.replace(R.id.content_frame, fragment);
+                    ft.commit();
+                }
+
+            } else {
+                Fragment fragment = null;
+                fragment = new VideoPromotion();
+                if (fragment != null) {
+                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                    ft.replace(R.id.content_frame, fragment);
+                    ft.commit();
+                }
+            }
+        }
+        else if(feedback.button==1){
+            Fragment fragment = null;
+            feedback.button=0;
+            fragment = new VideoPromotion();
             if (fragment != null) {
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                 ft.replace(R.id.content_frame, fragment);
@@ -372,6 +529,7 @@ public class MainActivity extends AppCompatActivity
         };
         if (session.isattendancestarted()) {
             toolbar.setBackgroundColor(Color.rgb(0, 145, 234));
+            if (android.os.Build.VERSION.SDK_INT >= 21)
             window.setStatusBarColor(Color.rgb(0, 145, 234));
             mSwitchShowSecure.setOnCheckedChangeListener (null);
             mSwitchShowSecure.setChecked(true);
@@ -394,7 +552,8 @@ public class MainActivity extends AppCompatActivity
             if(session.isattendancestarted()){
                 session.stopattendance();
                 toolbar.setBackgroundColor(Color.rgb(69, 90, 100));
-                window.setStatusBarColor(Color.rgb(69, 90, 100));
+                if (android.os.Build.VERSION.SDK_INT >= 21)
+                    window.setStatusBarColor(Color.rgb(69, 90, 100));
                 GiveAttendance("Off");
 
             }
@@ -642,9 +801,15 @@ public class MainActivity extends AppCompatActivity
                             //   mSwitchShowSecure.setChecked(true);
                             session.stopattendance();
                             toolbar.setBackgroundColor(Color.rgb(69, 90, 100));
-                            window.setStatusBarColor(Color.rgb(69, 90, 100));
+                            if (android.os.Build.VERSION.SDK_INT >= 21)
+                                window.setStatusBarColor(Color.rgb(69, 90, 100));
 
                             Toast.makeText(getApplicationContext(), "recored off duty", Toast.LENGTH_LONG).show();
+
+                            Attendance.stoptimer();
+                            isattendancestarted=0;
+
+
                         } else if (result1.equals("success")) {
 
                             // db.execSQL("DELETE FROM videodata WHERE phonen="+phone+" ");
@@ -652,11 +817,23 @@ public class MainActivity extends AppCompatActivity
                             //  mSwitchShowSecure.setChecked(false);
                             session.startattendance();
                             toolbar.setBackgroundColor(Color.rgb(0, 145, 234));
-
-                            window.setStatusBarColor(Color.rgb(0, 145, 234));
+                            if (android.os.Build.VERSION.SDK_INT >= 21)
+                                window.setStatusBarColor(Color.rgb(0, 145, 234));
                             System.out.print("starting session");
                             // bool = false;
                             Toast.makeText(getApplicationContext(), "recored on duty", Toast.LENGTH_LONG).show();
+
+                            StartTime=Attendance.starttimer();
+                            isattendancestarted=1;
+                            sharedpreferences = getPreferences(Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor = sharedpreferences.edit();
+
+                            editor.putLong("StartTimeStr",StartTime );
+
+                            editor.commit();
+
+
+
                             // new startrecording().execute();
                         } else if (result1.equals("failed")) {
                             if (Status.equals("IN")) {
@@ -703,6 +880,9 @@ public class MainActivity extends AppCompatActivity
     }
     public int getid(){
         return id;
+    }
+    public String getCode(){
+        return value;
     }
 //    @Override
 //    public void onActivityResult(int requestCode, int resultCode, Intent data) {

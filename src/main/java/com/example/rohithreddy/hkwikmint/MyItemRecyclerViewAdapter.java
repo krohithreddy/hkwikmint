@@ -62,6 +62,7 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
                 System.out.println(mapuserList.get(position).getPhonenumber());
 
                 Intent intent = new Intent(mListener, Scan2.class);
+                System.out.println("holder"+mapuserList.get(position).getId());
                 intent.putExtra("id",mapuserList.get(position).getId());
                 mListener.startActivity(intent);
 
