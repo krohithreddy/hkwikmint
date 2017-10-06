@@ -12,17 +12,18 @@
             android:id="@+id/route"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:layout_marginTop="40dp"
-            android:drawableTint="#FF4081"
-            android:maxLines="2"
 
+            android:drawableTint="#FF4081"
             android:dropDownHeight="wrap_content"
             android:dropDownWidth="match_parent"
+            android:fontFamily="serif"
             android:hint=" Search For Route   "
+            android:maxLines="2"
             android:textColor="#d67601"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/r_id"
